@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
   try {
-    const res = await fetch('http://localhost:5000/api/contact', {
+    const res = await fetch('https://myportfolio-t4li.onrender.com/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
